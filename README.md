@@ -1,6 +1,6 @@
 ## Hey there 👋 
 
-I'm Abhishek, your friendly neighborhood Technical PM.
+I'm Abhishek, a Product manager working at Highradius.
 
 🧠 Equal parts tech nerd and people geek — stitching vision into velocity
 
