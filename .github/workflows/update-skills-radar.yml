@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-"""Generate a radar chart from language statistics in the user's public GitHub repos."""
 import json
 import math
 import os
