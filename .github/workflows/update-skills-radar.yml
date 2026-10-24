@@ -1,0 +1,127 @@
+#!/usr/bin/env python3
+"""Generate a radar chart from language statistics in the user's public GitHub repos."""
+import json
+import math
+import os
+import urllib.parse
+import urllib.request
+from collections import Counter
+from html import escape
+
+USERNAME = os.environ.get("GITHUB_USERNAME", "abby1410")
+TOKEN = os.environ.get("GITHUB_TOKEN", "")
+API = "https://api.github.com"
+
+HEADERS = {
+    "Accept": "application/vnd.github+json",
+    "User-Agent": "github-tech-stack-radar",
+    "X-GitHub-Api-Version": "2022-11-28",
+}
+if TOKEN:
+    HEADERS["Authorization"] = f"Bearer {TOKEN}"
+
+
+def get_json(url):
+    request = urllib.request.Request(url, headers=HEADERS)
+    with urllib.request.urlopen(request, timeout=30) as response:
+        return json.load(response)
+
+
+def collect_language_bytes():
+    totals = Counter()
+    page = 1
+    while True:
+        url = (
+            f"{API}/users/{urllib.parse.quote(USERNAME)}/repos"
+            f"?type=owner&sort=pushed&per_page=100&page={page}"
+        )
+        repos = get_json(url)
+        if not repos:
+            break
+        for repo in repos:
+            if repo.get("fork") or repo.get("archived") or repo.get("disabled"):
+                continue
+            try:
+                totals.update(get_json(repo["languages_url"]))
+            except Exception as exc:
+                print(f"Skipping {repo.get('full_name', 'unknown')}: {exc}")
+        if len(repos) < 100:
+            break
+        page += 1
+    return totals
+
+
+def make_svg(language_totals):
+    width, height = 840, 680
+    cx, cy, radius = 420, 325, 180
+    top = language_totals.most_common(6)
+    if not top:
+        top = [("No language data yet", 1)]
+    max_bytes = max(value for _, value in top) or 1
+    total_bytes = sum(language_totals.values()) or 1
+    count = len(top)
+
+    def point(index, r):
+        angle = -math.pi / 2 + 2 * math.pi * index / count
+        return cx + r * math.cos(angle), cy + r * math.sin(angle)
+
+    def ring_points(r):
+        return " ".join(f"{x:.1f},{y:.1f}" for x, y in (point(i, r) for i in range(count)))
+
+    parts = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">',
+        '<rect width="100%" height="100%" rx="22" fill="#0d1117"/>',
+        '<text x="420" y="42" fill="#f0f6fc" font-family="Arial,sans-serif" font-size="24" font-weight="700" text-anchor="middle">MY GITHUB TECH STACK</text>',
+        f'<text x="420" y="67" fill="#8b949e" font-family="Arial,sans-serif" font-size="13" text-anchor="middle">Top {len(top)} languages across public, non-fork repositories · @{escape(USERNAME)}</text>',
+    ]
+
+    for level in range(1, 6):
+        parts.append(
+            f'<polygon points="{ring_points(radius * level / 5)}" fill="none" stroke="#30363d" stroke-width="1"/>'
+        )
+    for i in range(count):
+        x, y = point(i, radius)
+        parts.append(
+            f'<line x1="{cx}" y1="{cy}" x2="{x:.1f}" y2="{y:.1f}" stroke="#30363d" stroke-width="1"/>'
+        )
+
+    coords = []
+    for i, (_, value) in enumerate(top):
+        r = max(18, radius * value / max_bytes)
+        coords.append(point(i, r))
+    polygon = " ".join(f"{x:.1f},{y:.1f}" for x, y in coords)
+    parts.append(
+        f'<polygon points="{polygon}" fill="#58a6ff" fill-opacity="0.24" stroke="#58a6ff" stroke-width="2.5"/>'
+    )
+    for x, y in coords:
+        parts.append(
+            f'<circle cx="{x:.1f}" cy="{y:.1f}" r="5" fill="#79c0ff" stroke="#0d1117" stroke-width="1.5"/>'
+        )
+
+    for i, (language, value) in enumerate(top):
+        angle = -math.pi / 2 + 2 * math.pi * i / count
+        x, y = point(i, radius + 45)
+        anchor = "middle" if abs(math.cos(angle)) < 0.35 else ("start" if math.cos(angle) > 0 else "end")
+        pct = value / total_bytes * 100
+        parts.append(
+            f'<text x="{x:.1f}" y="{y:.1f}" fill="#e6edf3" font-family="Arial,sans-serif" '
+            f'font-size="14" font-weight="600" text-anchor="{anchor}">{escape(language)}</text>'
+        )
+        parts.append(
+            f'<text x="{x:.1f}" y="{y + 18:.1f}" fill="#8b949e" font-family="Arial,sans-serif" '
+            f'font-size="11" text-anchor="{anchor}">{pct:.1f}% of measured code</text>'
+        )
+
+    parts.extend([
+        '<text x="420" y="610" fill="#8b949e" font-family="Arial,sans-serif" font-size="12" text-anchor="middle">GitHub language byte counts are not a measure of proficiency.</text>',
+        '<text x="420" y="632" fill="#8b949e" font-family="Arial,sans-serif" font-size="11" text-anchor="middle">Updated by GitHub Actions · Forks and archived repositories excluded</text>',
+        '</svg>',
+    ])
+    return "\n".join(parts)
+
+
+if __name__ == "__main__":
+    languages = collect_language_bytes()
+    with open("skills-radar.svg", "w", encoding="utf-8") as output:
+        output.write(make_svg(languages) + "\n")
+    print(f"Generated skills-radar.svg from {len(languages)} detected languages.")
