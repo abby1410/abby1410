@@ -23,7 +23,7 @@ I turn messy problems into intelligent products - combining AI, engineering, and
 
 <br/><br/>
 
-[🌐 Portfolio](https://abhishek14-portfolio.vercel.app/) · [💻 Projects](https://github.com/abby1410?tab=repositories) · [📩 Email](mailto:abhishek14.work@gmail.com) .  [[🌐 LinkedIn](https://www.linkedin.com/in/ab-by/)
+[🌐 Portfolio](https://abhishek14-portfolio.vercel.app/) · [💻 Projects](https://github.com/abby1410?tab=repositories) · [📩 Email](mailto:abhishek14.work@gmail.com) .  [🌐 LinkedIn](https://www.linkedin.com/in/ab-by/)
 
 </div>
 
