@@ -1,6 +1,6 @@
 <div align="center">
 
-# Hey, I'm Abhishek Kumar 👋
+# Hey, I'm Abhishek 👋
 
 ### AI Product Manager · Product Thinker · Engineer at Heart
 
