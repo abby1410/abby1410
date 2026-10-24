@@ -11,3 +11,10 @@ I'm Abhishek, a Product manager working at Highradius.
 
 Want to talk product, code, or the future of tech? Drop me a line!
 abhishek14.work@gmail.com
+
+
+🕸️ My Technical Skills
+
+<p align="center">
+  <img src="./skills-radar.svg" width="600" alt="Technical Skills Radar Chart"/>
+</p>
