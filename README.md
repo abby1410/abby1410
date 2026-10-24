@@ -67,16 +67,28 @@ Exploring APIs, data pipelines, workflow automation, and the infrastructure that
 
 ### 🕸️ My Technical Footprint
 
+**AI & Intelligent Systems**  
+![AI](https://img.shields.io/badge/AI%20Engineering-8957E5?style=flat-square&logo=openai&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
+
+**Engineering & Data**  
+![APIs](https://img.shields.io/badge/API%20Development-0A7B83?style=flat-square&logo=fastapi&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![PySpark](https://img.shields.io/badge/PySpark-E25A1C?style=flat-square&logo=apachespark&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
+
+**Product & Execution**  
+![Product](https://img.shields.io/badge/Product%20Strategy-161B22?style=flat-square&logo=target&logoColor=white)
+![Automation](https://img.shields.io/badge/Workflow%20Automation-238636?style=flat-square&logo=githubactions&logoColor=white)
+
 <div align="center">
 
-<img src="https://github.com/abby1410/abby1410/raw/main/skills-radar.svg" width="85%" alt="Automatically updated GitHub programming language radar"/>
-
-*An evolving snapshot of the languages powering my public projects.*
-
 <a href="https://github.com/abby1410?tab=repositories">
-  <img src="https://img.shields.io/badge/EXPLORE%20MY%20CODE-161B22?style=for-the-badge&logo=github&logoColor=white" alt="Explore my code"/>
+  <img src="https://img.shields.io/badge/EXPLORE%20MY%20PROJECTS-161B22?style=for-the-badge&logo=github&logoColor=white" alt="Explore my projects"/>
 </a>
 
+</div>
 </div>
   <img src="https://img.shields.io/badge/VIEW%20MY%20PORTFOLIO-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="View my portfolio"/>
 </a>
