@@ -1,38 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="620" viewBox="0 0 720 620">
-  <rect width="720" height="620" rx="20" fill="#0d1117"/>
-  <text x="360" y="42" fill="#f0f6fc" font-family="Arial,sans-serif" font-size="23" font-weight="bold" text-anchor="middle">TECHNICAL SKILLS</text>
-  <text x="360" y="65" fill="#8b949e" font-family="Arial,sans-serif" font-size="12" text-anchor="middle">Engineering · Data · AI · Product</text>
-
-  <g transform="translate(360 320)" stroke="#30363d" stroke-width="1" fill="none">
-    <polygon points="0,-180 155.9,-90 155.9,90 0,180 -155.9,90 -155.9,-90"/>
-    <polygon points="0,-144 124.7,-72 124.7,72 0,144 -124.7,72 -124.7,-72"/>
-    <polygon points="0,-108 93.5,-54 93.5,54 0,108 -93.5,54 -93.5,-54"/>
-    <polygon points="0,-72 62.4,-36 62.4,36 0,72 -62.4,36 -62.4,-36"/>
-    <polygon points="0,-36 31.2,-18 31.2,18 0,36 -31.2,18 -31.2,-18"/>
-    <path d="M0 0 V-180 M0 0 L155.9 -90 M0 0 L155.9 90 M0 0 V180 M0 0 L-155.9 90 M0 0 L-155.9 -90"/>
-  </g>
-
-  <polygon points="360,194 460,262 453,374 360,437 269,373 292,281"
-           fill="#58a6ff" fill-opacity="0.22" stroke="#58a6ff" stroke-width="2.5"/>
-
-  <g fill="#79c0ff" stroke="#0d1117" stroke-width="1.5">
-    <circle cx="360" cy="194" r="5"/>
-    <circle cx="460" cy="262" r="5"/>
-    <circle cx="453" cy="374" r="5"/>
-    <circle cx="360" cy="437" r="5"/>
-    <circle cx="269" cy="373" r="5"/>
-    <circle cx="292" cy="281" r="5"/>
-  </g>
-
-  <g fill="#e6edf3" font-family="Arial,sans-serif" font-size="14" font-weight="600">
-    <text x="360" y="115" text-anchor="middle">Programming</text>
-    <text x="530" y="238" text-anchor="start">Data</text>
-    <text x="530" y="402" text-anchor="start">AI / ML</text>
-    <text x="360" y="475" text-anchor="middle">Backend</text>
-    <text x="190" y="402" text-anchor="end">Cloud &amp; DevOps</text>
-    <text x="190" y="238" text-anchor="end">Product &amp; Analytics</text>
-  </g>
-
-  <text x="360" y="555" fill="#8b949e" font-family="Arial,sans-serif" font-size="12" text-anchor="middle">Illustrative visualization · Customize to reflect your experience</text>
-  <text x="360" y="578" fill="#8b949e" font-family="Arial,sans-serif" font-size="11" text-anchor="middle">Replace illustrative values with your actual skill assessments.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="680" viewBox="0 0 840 680">
+<rect width="100%" height="100%" rx="22" fill="#0d1117"/>
+<text x="420" y="42" fill="#f0f6fc" font-family="Arial,sans-serif" font-size="24" font-weight="700" text-anchor="middle">MY GITHUB TECH STACK</text>
+<text x="420" y="67" fill="#8b949e" font-family="Arial,sans-serif" font-size="13" text-anchor="middle">Top 3 languages across public, non-fork repositories · @abby1410</text>
+<polygon points="420.0,289.0 451.2,343.0 388.8,343.0" fill="none" stroke="#30363d" stroke-width="1"/>
+<polygon points="420.0,253.0 482.4,361.0 357.6,361.0" fill="none" stroke="#30363d" stroke-width="1"/>
+<polygon points="420.0,217.0 513.5,379.0 326.5,379.0" fill="none" stroke="#30363d" stroke-width="1"/>
+<polygon points="420.0,181.0 544.7,397.0 295.3,397.0" fill="none" stroke="#30363d" stroke-width="1"/>
+<polygon points="420.0,145.0 575.9,415.0 264.1,415.0" fill="none" stroke="#30363d" stroke-width="1"/>
+<line x1="420" y1="325" x2="420.0" y2="145.0" stroke="#30363d" stroke-width="1"/>
+<line x1="420" y1="325" x2="575.9" y2="415.0" stroke="#30363d" stroke-width="1"/>
+<line x1="420" y1="325" x2="264.1" y2="415.0" stroke="#30363d" stroke-width="1"/>
+<polygon points="420.0,145.0 452.7,343.9 404.4,334.0" fill="#58a6ff" fill-opacity="0.24" stroke="#58a6ff" stroke-width="2.5"/>
+<circle cx="420.0" cy="145.0" r="5" fill="#79c0ff" stroke="#0d1117" stroke-width="1.5"/>
+<circle cx="452.7" cy="343.9" r="5" fill="#79c0ff" stroke="#0d1117" stroke-width="1.5"/>
+<circle cx="404.4" cy="334.0" r="5" fill="#79c0ff" stroke="#0d1117" stroke-width="1.5"/>
+<text x="420.0" y="100.0" fill="#e6edf3" font-family="Arial,sans-serif" font-size="14" font-weight="600" text-anchor="middle">Python</text>
+<text x="420.0" y="118.0" fill="#8b949e" font-family="Arial,sans-serif" font-size="11" text-anchor="middle">77.8% of measured code</text>
+<text x="614.9" y="437.5" fill="#e6edf3" font-family="Arial,sans-serif" font-size="14" font-weight="600" text-anchor="start">HTML</text>
+<text x="614.9" y="455.5" fill="#8b949e" font-family="Arial,sans-serif" font-size="11" text-anchor="start">16.3% of measured code</text>
+<text x="225.1" y="437.5" fill="#e6edf3" font-family="Arial,sans-serif" font-size="14" font-weight="600" text-anchor="end">CSS</text>
+<text x="225.1" y="455.5" fill="#8b949e" font-family="Arial,sans-serif" font-size="11" text-anchor="end">5.8% of measured code</text>
+<text x="420" y="610" fill="#8b949e" font-family="Arial,sans-serif" font-size="12" text-anchor="middle">GitHub language byte counts are not a measure of proficiency.</text>
+<text x="420" y="632" fill="#8b949e" font-family="Arial,sans-serif" font-size="11" text-anchor="middle">Updated by GitHub Actions · Forks and archived repositories excluded</text>
 </svg>
