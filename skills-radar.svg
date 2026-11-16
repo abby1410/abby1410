@@ -11,17 +11,17 @@
 <line x1="420" y1="325" x2="600.0" y2="325.0" stroke="#30363d" stroke-width="1"/>
 <line x1="420" y1="325" x2="420.0" y2="505.0" stroke="#30363d" stroke-width="1"/>
 <line x1="420" y1="325" x2="240.0" y2="325.0" stroke="#30363d" stroke-width="1"/>
-<polygon points="420.0,145.0 469.4,325.0 420.0,343.0 402.0,325.0" fill="#58a6ff" fill-opacity="0.24" stroke="#58a6ff" stroke-width="2.5"/>
+<polygon points="420.0,145.0 544.1,325.0 420.0,419.1 402.0,325.0" fill="#58a6ff" fill-opacity="0.24" stroke="#58a6ff" stroke-width="2.5"/>
 <circle cx="420.0" cy="145.0" r="5" fill="#79c0ff" stroke="#0d1117" stroke-width="1.5"/>
-<circle cx="469.4" cy="325.0" r="5" fill="#79c0ff" stroke="#0d1117" stroke-width="1.5"/>
-<circle cx="420.0" cy="343.0" r="5" fill="#79c0ff" stroke="#0d1117" stroke-width="1.5"/>
+<circle cx="544.1" cy="325.0" r="5" fill="#79c0ff" stroke="#0d1117" stroke-width="1.5"/>
+<circle cx="420.0" cy="419.1" r="5" fill="#79c0ff" stroke="#0d1117" stroke-width="1.5"/>
 <circle cx="402.0" cy="325.0" r="5" fill="#79c0ff" stroke="#0d1117" stroke-width="1.5"/>
 <text x="420.0" y="100.0" fill="#e6edf3" font-family="Arial,sans-serif" font-size="14" font-weight="600" text-anchor="middle">Jupyter Notebook</text>
-<text x="420.0" y="118.0" fill="#8b949e" font-family="Arial,sans-serif" font-size="11" text-anchor="middle">78.1% of measured code</text>
-<text x="645.0" y="325.0" fill="#e6edf3" font-family="Arial,sans-serif" font-size="14" font-weight="600" text-anchor="start">Python</text>
-<text x="645.0" y="343.0" fill="#8b949e" font-family="Arial,sans-serif" font-size="11" text-anchor="start">21.4% of measured code</text>
-<text x="420.0" y="550.0" fill="#e6edf3" font-family="Arial,sans-serif" font-size="14" font-weight="600" text-anchor="middle">HTML</text>
-<text x="420.0" y="568.0" fill="#8b949e" font-family="Arial,sans-serif" font-size="11" text-anchor="middle">0.4% of measured code</text>
+<text x="420.0" y="118.0" fill="#8b949e" font-family="Arial,sans-serif" font-size="11" text-anchor="middle">45.2% of measured code</text>
+<text x="645.0" y="325.0" fill="#e6edf3" font-family="Arial,sans-serif" font-size="14" font-weight="600" text-anchor="start">HTML</text>
+<text x="645.0" y="343.0" fill="#8b949e" font-family="Arial,sans-serif" font-size="11" text-anchor="start">31.1% of measured code</text>
+<text x="420.0" y="550.0" fill="#e6edf3" font-family="Arial,sans-serif" font-size="14" font-weight="600" text-anchor="middle">Python</text>
+<text x="420.0" y="568.0" fill="#8b949e" font-family="Arial,sans-serif" font-size="11" text-anchor="middle">23.6% of measured code</text>
 <text x="195.0" y="325.0" fill="#e6edf3" font-family="Arial,sans-serif" font-size="14" font-weight="600" text-anchor="end">CSS</text>
 <text x="195.0" y="343.0" fill="#8b949e" font-family="Arial,sans-serif" font-size="11" text-anchor="end">0.1% of measured code</text>
 <text x="420" y="610" fill="#8b949e" font-family="Arial,sans-serif" font-size="12" text-anchor="middle">GitHub language byte counts are not a measure of proficiency.</text>
